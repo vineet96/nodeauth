@@ -44,7 +44,7 @@ router.post('/register',type, function(req, res) {
 	console.log('password2 : ' + password2);
 
 	
-	if(req.file.path){
+	if(req.file && req.file.path){
 		var path = req.file.path;
 		var profileImageOrginalName     = req.file.originalname;
         var profileImageName            = req.file.originalname;
